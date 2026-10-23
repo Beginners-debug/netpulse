@@ -1,0 +1,27 @@
+﻿# ---- 构建产物 ----
+dist/
+bin/
+obj/
+*.user
+*.suo
+
+# ---- 本地工具链（体积大，不入库）----
+.venv/
+tools/roslyn/
+tmp/
+__pycache__/
+*.pyc
+
+# ---- 运行时数据（配置 / 流量 / 日志）----
+netpulse.ini
+data/
+*.log
+
+# ---- 开发过程截图 ----
+shots/
+docs/screenshots/*.tmp.png
+
+# ---- 会话记录 / 临时产物（不上传）----
+notes.md
+selftest.txt
+*.tmp.png

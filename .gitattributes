@@ -1,0 +1,14 @@
+﻿# 统一按 LF 入库，检出时由各平台自行处理；脚本保留 CRLF 以外的情况由下面按类型覆盖
+* text=auto eol=lf
+
+# PowerShell 脚本给 Windows 用户，保持 CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制资源（别做换行转换、别做文本 diff）
+*.ttf binary
+*.ico binary
+*.png binary
+*.jpg binary
+*.zip binary
